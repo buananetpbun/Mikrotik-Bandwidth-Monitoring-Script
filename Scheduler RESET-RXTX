@@ -1,0 +1,22 @@
+ ################################################################  
+ # Script by Agus Ramadhani  
+ # fb.com/buananet.pangkalanbun  
+ # http://www.o-om.com  
+ # SCRIPT MIKROTIK BANDWIDTH MONITORING  
+ # Version 1.0  
+ ################################################################  
+ # Fungsi untuk reset Bulanan Setiap tanggal 1  
+ ################################################################  
+ :local varDate;  
+ :local varDay;  
+ :set varDate [/system clock get date];  
+ :set varDay [:pick $varDate 4 6];  
+ :if ($varDay = "01") do={   
+ # jika har ini tanggal 1 reset RXTX ke nilai awal  
+ /system scheduler set RXByte.log comment="1" on-event="1"  
+ /system scheduler set RXByteCur.log comment="1" on-event="1"  
+ /system scheduler set TXByte.log comment="1" on-event=$RXByteCount  
+ /system scheduler set TXByteCur.log comment="1" on-event="1"  
+ /system scheduler disable [/system scheduler find name="RESET-RXTX"]  
+ }  
+ ################################################################  
