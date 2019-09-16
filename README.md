@@ -4,7 +4,6 @@ Script Bandwidth monitoring ini hampir 100% akurat mungkin seakurat Cacti Monito
 
 <img border="0" src="https://1.bp.blogspot.com/-9Ca00h6F6uY/WUYPRFA-GiI/AAAAAAAAAa8/djdMN-OkxcAY1HtJMLCdccx9n2I70JViwCLcBGAs/s1600/mikrotik%2Bbandwidth%2Bmonitoring%2Bscript.png" />
 
-
 Silahkan paste script ini di terminal mikrotik
 
 /system scheduler add interval="00:00:00" name="RXByte.log" on-event="1" start-time="00:00:00"  
@@ -13,7 +12,6 @@ Silahkan paste script ini di terminal mikrotik
  /system scheduler add interval="00:00:00" name="TXByteCur.log" on-event="1" start-time="00:00:00"  
  /system scheduler add interval="00:01:00" name="RESET-RXTX" start-time=startup  
  /system scheduler add interval="00:0:030" name="BANDWIDTH-MONITORING" start-time=startup  
-
 
 Copy Paste Script reset bulanan ini dalam file Scheduler RESET-RXTX
 
