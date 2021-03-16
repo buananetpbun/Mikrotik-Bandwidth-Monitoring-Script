@@ -1,4 +1,4 @@
-# Mikrotik-Bandwidth-Monitoring-Script
+# Mikrotik Bandwidth Monitoring Script
 
 Script Bandwidth monitoring ini hampir 100% akurat mungkin seakurat Cacti Monitoring, sebenarnya rencana awal saya gunakan untuk memantau FUP Quota Indihome namun saya tidak memahami algoritma yang digunakan sistem telkom seperti apa, makanya hasil selalu berbeda, mungkin ini berkaitan dengan streaming yang tidak termasuk dalam sistem FUP mereka.
 
