@@ -1,4 +1,4 @@
-# Mikrotik Bandwidth Monitoring Script
+## Mikrotik Bandwidth Monitoring Script
 
 Script Bandwidth monitoring ini hampir 100% akurat mungkin seakurat Cacti Monitoring, sebenarnya rencana awal saya gunakan untuk memantau FUP Quota Indihome namun saya tidak memahami algoritma yang digunakan sistem telkom seperti apa, makanya hasil selalu berbeda, mungkin ini berkaitan dengan streaming yang tidak termasuk dalam sistem FUP mereka.
 
@@ -155,4 +155,6 @@ jangan Lupa ganti total quota yang diberikan ISP masing2 dicontoh adalah 500GB
 :local TOTQuota 500;
 
 
-<img style="float:right; padding-top:10px" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbuananetpbun.github.io%2F&count_bg=%23C83D3D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="Hits"/>
+## <b>License</b><br>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)
